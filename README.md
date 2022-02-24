@@ -1,6 +1,9 @@
 [![R-CMD-check](https://github.com/bluegreen-labs/rpmodel/workflows/R-CMD-check/badge.svg)](https://github.com/bluegreen-labs/rpmodel/actions)
 [![codecov](https://codecov.io/gh/bluegreen-labs/rpmodel/branch/master/graph/badge.svg?token=7bImDR3uCT)](https://codecov.io/gh/bluegreen-labs/rpmodel)
 
+## Fork of the rpmodel
+Includes implementation of C4 photosynthesis based on Scott & Smith 2022 and added calculations for leaf nitrogen.
+
 ## Purpose
 
 `rpmodel` provides an implementation of the P-model (Prentice et al., 2014; Wang et al., 2017; Stocker et al., 2020) for predicting acclimated photosynthetic parameters, assimilation, and dark respiration rates as a function of the environment. The main function is `rpmodel()` which returns a list of variables that are mutually consistent within the theory of the P-model (see [Usage](./articles/usage.html) ). Further functions used within `rpmodel()` are also provided through the package.
@@ -60,6 +63,8 @@ Benjamin Stocker
 benjamin.stocker@gmail.com
 
 ## References
+
+Scott, H.G., Smith, N.G., 2022. A model of C 4 photosynthetic acclimation based on least‐cost optimality theory suitable for Earth System Model incorporation. J. Adv. Model. Earth Syst. 21. https://doi.org/10.1029/2021MS002470 
 
 Stocker, B. D., Wang, H., Smith, N. G., Harrison, S. P., Keenan, T. F., Sandoval, D., Davis, T., and Prentice, I. C.: P-model v1.0: an optimality-based light use efficiency model for simulating ecosystem gross primary production, Geosci. Model Dev., 13, 1545–1581, https://doi.org/10.5194/gmd-13-1545-2020, 2020.
 
